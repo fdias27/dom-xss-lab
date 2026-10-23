@@ -15,7 +15,8 @@ before(async () => {
 after(async () => { await browser?.close(); });
 
 async function openLab(t, viewport = { width: 1440, height: 1000 }) {
-  const context = await browser.newContext({ viewport, reducedMotion: 'reduce' });
+  // Capture at 3x pixel density so README text stays sharp on high-DPI displays.
+  const context = await browser.newContext({ viewport, reducedMotion: 'reduce', deviceScaleFactor: process.env.CAPTURE_SCREENSHOTS ? 3 : 1 });
   t.after(() => context.close());
   const page = await context.newPage();
   page.setDefaultTimeout(15000);
