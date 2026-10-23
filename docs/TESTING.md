@@ -14,10 +14,10 @@
 | Review progress and reset | **Confirmed** | Reviewing the same step twice counted once; reset restored zero reviewed steps and the initial comment |
 | Markdown export | **Confirmed** | Downloaded the report and checked its observations and explicit self-review disclaimer |
 | Mobile breakpoint | **Confirmed at 390 × 844** | No horizontal page overflow; challenge navigation and the third preview remained available |
-| Standalone Playwright suite | **Included; local launch blocked** | The environment closed the Edge automation process before a page could open |
-| GitHub Actions | **Configured; not yet run** | Requires publishing the repository and enabling Actions |
+| Standalone Playwright suite | **7 passed in GitHub Actions** | Chromium 151.0.7922.34, Ubuntu runner, Node.js 24 |
+| GitHub Actions | **All 3 jobs passed** | Unit tests on Node.js 22 and 24; browser tests on Chromium |
 
-The browser observations were checked through the integrated app browser against the local application. They are not a claim that the standalone Playwright suite passed. Re-run that suite on your own machine or inspect GitHub Actions after publishing. The browser version of the integrated preview was not recorded.
+The local browser observations were checked through the integrated app browser. Local standalone Edge automation was blocked by the environment. After publication, the standalone Playwright suite ran successfully in GitHub Actions: **7 passed, 0 failed**, using Chromium **151.0.7922.34**. Unit jobs passed on both Node.js 22 and 24. See the [verified workflow run](https://github.com/fdias27/first-xss-lab/actions/runs/39982415899) for commit `b0330e3`. The integrated preview browser version was not recorded.
 
 ## Unit and regression coverage
 
