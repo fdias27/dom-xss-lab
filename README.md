@@ -119,26 +119,15 @@ The server binds to `127.0.0.1`. Preview iframes allow scripts but omit `allow-s
 
 Inline script is deliberately allowed to demonstrate the event handler. These controls reduce the example's reach; arbitrary JavaScript can still freeze a frame or tab. Use the documented inputs, do not enter personal data, and do not deploy the vulnerable lab as a public application. Review [the security policy](SECURITY.md) before reporting issues.
 
-## Publish on GitHub
-
-Create an empty repository named `first-xss-lab`, without adding another README or license. From this folder:
+## Get the source
 
 ```sh
-git init
-git add .
-git commit -m "Add guided DOM XSS lab with patch exercise and regression tests"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/first-xss-lab.git
-git push -u origin main
+git clone https://github.com/fdias27/first-xss-lab.git
+cd first-xss-lab
+npm start
 ```
 
-Replace `YOUR-USERNAME` with your GitHub username. GitHub may ask you to authenticate. The repository has not been published automatically.
-
-**Suggested description:** `A guided DOM XSS lab: investigate a comment preview, prove execution, patch the sink, and verify the fix.`
-
-**Suggested topics:** `xss`, `dom-xss`, `web-security`, `javascript`, `nodejs`, `playwright`, `educational`.
-
-Use your own investigation notes to explain what you learned. Do not present checklist completion or generated documentation as an independent security audit.
+To practice independently, fork this repository and follow [the patching guide](docs/EXERCISE.md). Use your own investigation notes to explain what you learned. Do not present checklist completion or generated documentation as an independent security audit.
 
 ## References
 
