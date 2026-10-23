@@ -85,7 +85,7 @@ The configured Linux CI job installs Chromium and its system dependencies, then 
 - [Execution comparison](images/execution-comparison.png)
 - [Mobile workbench](images/lab-mobile.png)
 
-These are captures of the actual local UI. The execution comparison is cropped from the desktop capture without changing its content.
+These are captures of the actual UI. The execution comparison is a native PNG captured directly in Chromium at 3x pixel density (2805 × 1032 pixels), without JPEG compression or upscaling. It was regenerated in the [successful screenshot workflow](https://github.com/fdias27/first-xss-lab/actions/runs/39983251312). The overview and mobile screenshots retain the original local captures.
 
 To refresh screenshots during a successful automated browser run:
 
