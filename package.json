@@ -1,5 +1,5 @@
 {
-  "name": "first-xss-lab",
+  "name": "dom-xss-lab",
   "version": "2.0.0",
   "private": true,
   "description": "Investigate, reproduce, patch, and regression-test DOM XSS in a comment preview.",

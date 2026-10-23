@@ -17,7 +17,7 @@
 | Standalone Playwright suite | **7 passed in GitHub Actions** | Chromium 151.0.7922.34, Ubuntu runner, Node.js 24 |
 | GitHub Actions | **All 3 jobs passed** | Unit tests on Node.js 22 and 24; browser tests on Chromium |
 
-The local browser observations were checked through the integrated app browser. Local standalone Edge automation was blocked by the environment. After publication, the standalone Playwright suite ran successfully in GitHub Actions: **7 passed, 0 failed**, using Chromium **151.0.7922.34**. Unit jobs passed on both Node.js 22 and 24. See the [verified workflow run](https://github.com/fdias27/first-xss-lab/actions/runs/39982415899) for commit `b0330e3`. The integrated preview browser version was not recorded.
+The local browser observations were checked through the integrated app browser. Local standalone Edge automation was blocked by the environment. After publication, the standalone Playwright suite ran successfully in GitHub Actions: **7 passed, 0 failed**, using Chromium **151.0.7922.34**. Unit jobs passed on both Node.js 22 and 24. See the [verified workflow run](https://github.com/fdias27/dom-xss-lab/actions/runs/39982415899) for commit `b0330e3`. The integrated preview browser version was not recorded.
 
 ## Unit and regression coverage
 
@@ -85,7 +85,7 @@ The configured Linux CI job installs Chromium and its system dependencies, then 
 - [Execution comparison](images/execution-comparison.png)
 - [Mobile workbench](images/lab-mobile.png)
 
-These are captures of the actual UI. The execution comparison is a native PNG captured directly in Chromium at 3x pixel density (2805 × 1032 pixels), without JPEG compression or upscaling. It was regenerated in the [successful screenshot workflow](https://github.com/fdias27/first-xss-lab/actions/runs/39983251312). The overview and mobile screenshots retain the original local captures.
+These are captures of the actual UI. The execution comparison is a native PNG captured directly in Chromium at 3x pixel density (2805 × 1032 pixels), without JPEG compression or upscaling. It was regenerated in the [screenshot update](https://github.com/fdias27/dom-xss-lab/commit/b0ef94c119c786d2220f6d8043c72e4455fd754f). The overview and mobile screenshots retain the original local captures.
 
 To refresh screenshots during a successful automated browser run:
 

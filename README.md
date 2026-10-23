@@ -122,8 +122,8 @@ Inline script is deliberately allowed to demonstrate the event handler. These co
 ## Get the source
 
 ```sh
-git clone https://github.com/fdias27/first-xss-lab.git
-cd first-xss-lab
+git clone https://github.com/fdias27/dom-xss-lab.git
+cd dom-xss-lab
 npm start
 ```
 
