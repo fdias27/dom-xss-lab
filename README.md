@@ -83,7 +83,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-The browser tests launch an isolated browser and fulfill requests using the actual HTTP handler and its CSP headers. You do not need to keep a server running. This verifies rendering and interaction, but does not test socket transport. On Linux CI, use `npx playwright install --with-deps chromium`.
+The browser tests launch an isolated browser and fulfill requests using the actual HTTP handler and its CSP headers. You do not need to keep a server running. This verifies rendering and interaction, but does not test socket transport. GitHub CI uses the Google Chrome already installed on its Ubuntu 24.04 runner. On other Linux machines, use `npx playwright install --with-deps chromium` when system dependencies are missing.
 
 See [test coverage and verification evidence](docs/TESTING.md). The checked-in screenshots come from the local lab. Do not infer that the browser suite passed just from their presence.
 

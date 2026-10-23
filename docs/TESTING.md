@@ -77,7 +77,7 @@ $env:BROWSER_CHANNEL = "msedge"
 npm run test:browser
 ```
 
-The configured Linux CI job installs Chromium and its system dependencies, then runs the same suite. Unit tests run separately on Node.js 22 and 24. The app itself has no runtime dependencies; Playwright is development-only.
+The configured Linux CI job uses the Google Chrome installation provided by the Ubuntu 24.04 GitHub runner, selected with `BROWSER_CHANNEL=chrome`, and runs the same seven scenarios. This avoids a separate system-package download during each run. The job has a ten-minute timeout. Unit tests run separately on Node.js 22 and 24. The app itself has no runtime dependencies; Playwright is development-only. Local runs still default to Playwright Chromium unless a channel is selected.
 
 ## Screenshots
 
