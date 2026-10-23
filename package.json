@@ -1,0 +1,16 @@
+{
+  "name": "first-xss-lab",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Investigate, reproduce, patch, and regression-test DOM XSS in a comment preview.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:exercise": "node --test test/exercise.test.mjs",
+    "test:browser": "node --test test/browser/*.test.mjs",
+    "test:all": "npm test && npm run test:browser"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}
